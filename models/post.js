@@ -4,34 +4,31 @@ const postSchema = new mongoose.Schema(
   {
     category: {
       type: String,
-      default: "",
-    },
-    id: {
-      type: String,
+      required: [true, "Category is required"],
     },
     image: {
       type: String,
-      default: "",
+      required: [true, "image is required"],
     },
     is_enabled: {
-      type: Number,
-      default: 1,
+      type: Boolean,
+      required: [true, "is_Enabled is required"],
     },
     origin_price: {
       type: Number,
-      default: 0,
+      required: [true, "origin price is required"],
     },
     price: {
       type: Number,
-      default: 0,
+      required: [true, "price is required"],
     },
     title: {
       type: String,
-      required: [true, "title未填寫"],
+      required: [true, "title is required"],
     },
     unit: {
       type: String,
-      default: 0,
+      required: [true, "unit is required"],
     },
   },
   { versionKey: false }
