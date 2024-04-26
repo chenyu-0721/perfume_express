@@ -9,7 +9,8 @@ router.get("/", async (req, res, next) => {
     const post = await Post.find();
     handleSuccess(res, post);
   } catch (err) {
-    handleError(res, err);
+    const error = "get 失敗";
+    handleError(res, error);
   }
 });
 
@@ -18,7 +19,8 @@ router.post("/", async (req, res, next) => {
     const newpost = await Post.save();
     handleSuccess(res, newpost);
   } catch (err) {
-    handleError(res, err);
+    const error = "post 失敗";
+    handleError(res, error);
   }
 });
 
@@ -29,7 +31,8 @@ router.patch("/:id", async (req, res, next) => {
     });
     handleSuccess(res, newpost);
   } catch (err) {
-    handleError(res, err);
+    const error = "patch 失敗";
+    handleError(res, error);
   }
 });
 
@@ -38,7 +41,8 @@ router.delete("/:id", async (req, res, next) => {
     const delpost = await Post.findByIdAndDelete(req.params.id);
     handleSuccess(res, delpost);
   } catch (err) {
-    handleError(res, err);
+    const error = "delete 失敗";
+    handleError(res, error);
   }
 });
 
