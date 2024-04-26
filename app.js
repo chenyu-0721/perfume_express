@@ -9,6 +9,12 @@ var postsRouter = require("./routes/posts");
 const port = process.env.PORT || 4000;
 var app = express();
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 // mongoose 開始
 
 // app.js
