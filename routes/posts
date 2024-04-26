@@ -15,7 +15,7 @@ router.get("/", async (req, res, next) => {
 
 router.post("/", async (req, res, next) => {
   try {
-    const newpost = await post.save();
+    const newpost = await Post.save();
     handleSuccess(res, newpost);
   } catch (err) {
     handleError(res, err);
@@ -24,7 +24,7 @@ router.post("/", async (req, res, next) => {
 
 router.patch("/:id", async (req, res, next) => {
   try {
-    const newpost = await post.findByIdAndUpdate(req.params.id, req.body, {
+    const newpost = await Post.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
     handleSuccess(res, newpost);
@@ -35,7 +35,7 @@ router.patch("/:id", async (req, res, next) => {
 
 router.delete("/:id", async (req, res, next) => {
   try {
-    const delpost = await Perfume.findByIdAndDelete(req.params.id);
+    const delpost = await Post.findByIdAndDelete(req.params.id);
     handleSuccess(res, delpost);
   } catch (err) {
     handleError(res, err);
