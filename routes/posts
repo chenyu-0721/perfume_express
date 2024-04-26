@@ -7,10 +7,9 @@ const handleError = require("../handleError.js");
 router.get("/", async (req, res, next) => {
   try {
     const post = await Post.find();
-    handleSuccess(res, post);
+    res.json(post);
   } catch (err) {
-    const error = "get 失敗";
-    handleError(res, error);
+    res.status(500).json({ message: error.message });
   }
 });
 
