@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "2678537a-8ec3-464c-818e-41051030bd50",
+		"name": "perfume-express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33911885"
+	},
+	"item": [
+		{
+			"name": "新增資料",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"category\": \"清新海洋\",\r\n      \"id\": \"-Ni3EC_c7RwSD5BXb1m2\",\r\n      \"image\": \"https://images.unsplash.com/photo-1582211594533-268f4f1edcb9?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"500\",\r\n      \"price\": \"450\",\r\n      \"title\": \"藍色夢境\",\r\n      \"unit\": \"50ml\"\r\n    },\r\n    {\r\n      \"category\": \"木質\",\r\n      \"id\": \"-Ni3EPyAsMsKfa-8kiDF\",\r\n      \"image\": \"https://images.unsplash.com/photo-1519669011783-4eaa95fa1b7d?auto=format&fit=crop&q=80&w=1958&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"600\",\r\n      \"price\": \"550\",\r\n      \"title\": \"夜之誘惑\",\r\n      \"unit\": \"30ml\"\r\n    },\r\n    {\r\n      \"category\": \"花香調\",\r\n      \"id\": \"-Ni3EZArj214JjtjOvp4\",\r\n      \"image\": \"https://images.unsplash.com/photo-1544468266-6a8948003cd7?auto=format&fit=crop&q=80&w=2074&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"900\",\r\n      \"price\": \"850\",\r\n      \"title\": \"花語綻放\",\r\n      \"unit\": \"100ml\"\r\n    },\r\n    {\r\n      \"category\": \"果香調\",\r\n      \"id\": \"-Ni3EjS5hT54sXomo36S\",\r\n      \"image\": \"https://images.unsplash.com/photo-1578996834254-13d1b661a5ed?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"480\",\r\n      \"price\": \"430\",\r\n      \"title\": \"清新晨露\",\r\n      \"unit\": \"50ml\"\r\n    },\r\n    {\r\n      \"category\": \"果香調\",\r\n      \"id\": \"-Ni3EvEzQ9OqqM2oSlZv\",\r\n      \"image\": \"https://images.unsplash.com/photo-1566977776052-6e61e35bf9be?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"520\",\r\n      \"price\": \"480\",\r\n      \"title\": \"甜蜜誘人\",\r\n      \"unit\": \"30ml\"\r\n    },\r\n    {\r\n      \"category\": \"木質\",\r\n      \"id\": \"-Ni3F2xU_6v8JsXRdYWt\",\r\n      \"image\": \"https://images.unsplash.com/photo-1532413992378-f169ac26fff0?auto=format&fit=crop&q=80&w=2080&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"700\",\r\n      \"price\": \"650\",\r\n      \"title\": \"神秘東方\",\r\n      \"unit\": \"50ml\"\r\n    },\r\n    {\r\n      \"category\": \"木質\",\r\n      \"id\": \"-Ni3F9L0Mf1B_e1y2hhN\",\r\n      \"image\": \"https://images.unsplash.com/photo-1592842414746-a2fd2101381f?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"850\",\r\n      \"price\": \"800\",\r\n      \"title\": \"優雅夜晚\",\r\n      \"unit\": \"75ml\"\r\n    },\r\n    {\r\n      \"category\": \"花香調\",\r\n      \"id\": \"-Ni3FKfcRlYGK4OKEKOm\",\r\n      \"image\": \"https://images.unsplash.com/photo-1592247691114-69a06342531a?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"980\",\r\n      \"price\": \"930\",\r\n      \"title\": \"綠野仙踪\",\r\n      \"unit\": \"100ml\"\r\n    },\r\n    {\r\n      \"category\": \"果香調\",\r\n      \"id\": \"-Ni3FcRRlvscTYbyu83p\",\r\n      \"image\": \"https://images.unsplash.com/photo-1593886564059-13d6b735987b?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"550\",\r\n      \"price\": \"500\",\r\n      \"title\": \"陽光活力\",\r\n      \"unit\": \"60ml\"\r\n    },\r\n    {\r\n      \"category\": \"木質\",\r\n      \"id\": \"-Ni3FmO-Rb5GtsErRSOJ\",\r\n      \"image\": \"https://images.unsplash.com/photo-1559264730-1533a6ec0433?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"630\",\r\n      \"price\": \"580\",\r\n      \"title\": \"星夜閃耀\",\r\n      \"unit\": \"40ml\"\r\n    },\r\n    {\r\n      \"category\": \"花香調\",\r\n      \"id\": \"-Ni3Fwr5Q-3CXXtr75Tz\",\r\n      \"image\": \"https://images.unsplash.com/photo-1587304883108-8bbeaac37125?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"650\",\r\n      \"price\": \"610\",\r\n      \"title\": \"清雅櫻花\",\r\n      \"unit\": \"50ml\"\r\n    },\r\n    {\r\n      \"category\": \"木質\",\r\n      \"id\": \"-Ni3GFCGuX-q-hv8aHsv\",\r\n      \"image\": \"https://images.unsplash.com/photo-1588680388356-127f57196ca8?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n      \"is_enabled\": 1,\r\n      \"origin_price\": \"550\",\r\n      \"price\": \"540\",\r\n      \"title\": \"森林繆思\",\r\n      \"unit\": \"30ml\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://perfume-express-pty3.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"perfume-express-pty3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得所有資料",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://perfume-express-pty3.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"perfume-express-pty3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆資料",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://perfume-express-pty3.onrender.com/posts/662b2d6fab1d86ae6459744a",
+					"protocol": "https",
+					"host": [
+						"perfume-express-pty3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"662b2d6fab1d86ae6459744a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://perfume-express-pty3.onrender.com/posts/",
+					"protocol": "https",
+					"host": [
+						"perfume-express-pty3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://perfume-express-pty3.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"perfume-express-pty3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
